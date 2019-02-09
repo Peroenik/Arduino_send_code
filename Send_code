@@ -1,0 +1,201 @@
+bool Preamble[]= {1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1,};
+//long 44 bit
+bool Signal_1[] = {1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0};
+bool Signal_2[] = {1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0};
+bool Signal_3[] = {1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0}; 
+bool Signal_4[] = {1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0};
+bool Signal_5[] = {1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0};
+bool Signal_6[] = {1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+bool Signal_7[] = {1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0};
+bool Signal_8[] = {0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0};
+bool Signal_9[] = {0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0};
+bool Signal_10[] = {0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0};
+bool Signal_11[] = {0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0};
+bool Signal_12[] = {0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0};
+bool Signal_13[] = {0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0};
+bool Signal_14[] = {0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0};
+bool Signal_15[] = {0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0};
+ // this long 65 bit
+  //full signal long 109 bit
+  
+      bool prevValue = false; //debounce 
+      bool currentValue = false; //debounce  
+
+       
+const uint8_t BTN_PIN  = 0; 
+const uint8_t LED  = 1;
+const uint8_t DATA  = 2;
+
+
+void setup() {   
+
+    pinMode(BTN_PIN , INPUT_PULLUP);
+    pinMode(LED, OUTPUT);
+   pinMode(DATA, OUTPUT);
+
+}
+
+void loop() {
+  currentValue = digitalRead(BTN_PIN);
+  if (currentValue != prevValue) {
+        delay(20);
+    currentValue = digitalRead(BTN_PIN);
+        if (digitalRead(BTN_PIN) == LOW){
+        digitalWrite(LED, HIGH);
+      delayMicroseconds(1000);
+      
+      for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_1[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+      
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_2[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_3[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_4[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_5[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_6[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_7[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_8[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_9[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_10[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_11[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_12[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_13[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_14[i]);
+                  delayMicroseconds(500);
+      }
+  delayMicroseconds(750);
+  delay(50);
+        for (int i = 0; i <= 43 ; i++) {
+        digitalWrite(DATA, Preamble[i]);
+        delayMicroseconds(500);
+      }
+                  for (int i = 0; i <= 64 ; i++) {
+                  digitalWrite(DATA, Signal_15[i]);
+                  delayMicroseconds(500);
+      }
+      digitalWrite(LED, LOW);                      
+    }
+  }     
+  prevValue = currentValue;
+}
+      
